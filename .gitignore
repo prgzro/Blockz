@@ -1,0 +1,61 @@
+# ═══════════════════════════════════════════════════════════════
+#  Blockz — .gitignore
+# ═══════════════════════════════════════════════════════════════
+
+# ── Compiled binaries ─────────────────────────────────────────
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# ── Go build artifacts ────────────────────────────────────────
+*.o
+*.a
+*.test
+*.out
+*.prof
+
+# ── Dependency management ─────────────────────────────────────
+vendor/
+
+# ── Node data & LevelDB stores ───────────────────────────────
+*_data/
+blockz_data/
+*.ldb
+*.log
+LOCK
+CURRENT
+MANIFEST-*
+LOG
+LOG.old
+
+# ── Runtime logs ──────────────────────────────────────────────
+*.log
+
+# ── IDE & editor configs ─────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Debug & profiling ────────────────────────────────────────
+__debug_bin*
+*.pprof
+cpu.prof
+mem.prof
+coverage.out
+
+# ── Environment & secrets ────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+
+# ── Misc ─────────────────────────────────────────────────────
+.qodo/
+tmp/
